@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 0 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Vertically and Horizontally center the .footer-section inside .footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.footer-section {
+  padding: 48px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #171717;
+}
+
+.footer-items {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.footer-items a {
+  text-decoration: none;
+  outline: none;
+  color: #525252;
+  padding: 0 2px;
+}
+
+.footer-items li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-items-icons {
+  gap: 24px;
+}
+
+.footer-items-icons a {
+  padding: 0;
+  color: #a3a3a3;
+}
+
+.footer-items svg {
+  display: block;
+}
+
+/* UI states */
+.footer-items a:hover {
+  color: #171717;
+}
+
+.footer-items a:focus {
+  color: #171717;
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  border-radius: 4px;
+}
+
+.footer-items a:disabled {
+  pointer-events: none;
+  color: #a3a3a3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 16px 0px;
+  }
+
+  .footer-section {
+    padding: 64px 16px;
+  }
+
+  .footer-items {
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 16px 0px;
+  }
+
+  .footer-section {
+    padding: 96px 16px;
+  }
+}
